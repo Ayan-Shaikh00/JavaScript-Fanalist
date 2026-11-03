@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYTEN'S JS-COLLECTION</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <div id="intro">
+                <h1>WELCOME TO AYTEN'S JAVASCRIPT<br>PROJECTS</h1>
+            </div>
+            <form id="search" action="projects.html" method="get">
+                <input type="search" id="s1" name="q" placeholder="Search Projects" aria-label="Search Projects">
+            </form>
+        </nav>
+    </header>
+
+    <section id="search-results" aria-label="Project search results" aria-live="polite" hidden>
+        <ul id="project-results"></ul>
+        <p id="no-results" hidden>No matching projects found.</p>
+    </section>
+
+    <main id="main">
+        <section id="main1" class="content-section">
+            <p id="p1">
+                I started learning JavaScript by following a structured approach, using AI tools like ChatGPT to understand concepts, clarify doubts, and explore real-world examples. Instead of just memorizing syntax, I focused on understanding how JavaScript works, including variables, functions, arrays, objects, DOM manipulation, ES6 features, asynchronous JavaScript, promises, and APIs. AI helped me break down complex topics into simple explanations and provided practical coding examples that made learning easier and more effective. Along with learning, I consistently practiced coding problems and applied my knowledge by building small projects. These projects helped me improve my problem-solving skills, understand real-world use cases, and gain confidence in writing JavaScript code. My learning approach has been a combination of AI-assisted learning, hands-on practice, debugging, and project development, which has helped me build a stronger foundation in JavaScript.
+            </p>
+        </section>
+
+        <section id="main2" class="media-section">
+            <div id="m-p-1">
+                <video src="Assets/vid.mp4" loop autoplay muted playsinline></video>
+            </div>
+            <div id="m-p-2">
+                <!-- Removed nested <button> tag for valid HTML & better accessibility -->
+                <a href="projects.html" class="btn-project">CLICK HERE TO SEE<br>PROJECTS</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="JS/app.js"></script>
+</body>
+</html>

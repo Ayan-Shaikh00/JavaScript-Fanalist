@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #f4f4f4; /* Optional subtle background */
+}
+
+main {
+    min-height: 100%;
+    width: 100%;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* Updated selector for the Back button anchor */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 130px;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: lightgreen;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-back:hover {
+    background-color: #90ee90;
+}
+
+header {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > input {
+    height: 3.5rem;
+    width: 50%;
+    font-size: 1.5rem;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding-left: 2rem;
+    outline: none;
+}
+
+#list {
+    min-height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    padding: 20px;
+    gap: 1.5rem;
+}
+
+/* Updated from #list > div to use the .project-box class */
+.project-box {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-box[hidden] {
+    display: none;
+}
+
+.project-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-box > a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 900px) {
+    #list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    header > input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    #list {
+        grid-template-columns: 1fr;
+    }
+}
